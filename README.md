@@ -68,7 +68,11 @@ partir de la classe AddressRepository
 
 Etape 30
 
-Rajouter booststrap
+Pour rajouter boostsrap, nous  telechargeons les fichiers boostrap (sur le site de boostrap) et on les ajoute dans les fichiers static de notre projet.
+Ensuite nous ajoutons cela dans le head de notre template html  
+   <link rel="stylesheet" th:href="/@{/bootstrap.min.css}">
+    <script th:src="/@{/jquery-3.5.1.min.js}"></script>
+    <script th:src="/@{/bootstrap.min.js}"></script>
 
 
 ----------TP4: DM noté: UTILISATION D'API WEB AVEC SPRING BOOT------------
