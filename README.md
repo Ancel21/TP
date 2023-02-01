@@ -1,7 +1,7 @@
 #@author: Ancel Nkamngang
 --------------------------------------------------------------------------------------------------------
 
-Lien Github: 
+Lien Github: https://github.com/Ancel21/TP.git
 
 ----------TP3: DM noté: REALISATION D'UNE APPLICATION WEB AVEC SPRING BOOT------------
 
@@ -68,14 +68,37 @@ partir de la classe AddressRepository
 
 Etape 30
 
-Pour rajouter boostsrap, 
+Rajouter booststrap
 
 
 ----------TP4: DM noté: UTILISATION D'API WEB AVEC SPRING BOOT------------
 
 Etape 6 
 
-- Pour 
+1- Pour appeler l'API de MétéoConcept, nous avons besoin d'une clé API valide.
+ 
+2- L'url de base pour l'appeler est :  https://api.meteo-concept.com/api/
+ 
+3- GET: permet de récupérer des données à partir de l'API
+ 
+4- Les paramètres peuvent être inclus dans l'URL de la requête en tant que paramètres de query string. Par exemple, pour une requête GET, l'URL est: "https://api.meteoconcept.com/data?api_key=YOUR_API_KEY&location=Paris".
+ 
+5- La réponse est un objet contenant une clé nommée city associée à une collection d'objet de type city.
+ 
+6- L'API retournera les données météorologiques en format JSON ou XML, l'information se trouve dans l'objet forecast-map au niveau de l'attribut 'temp2m'
+ 
+7- Pour afficher les previsions meteo, on utilise la requete suivante GET /forecast/daily/{day}/map cette requete aura pour reponse un fichier json ou xml avec 2 objets à l'interieur city et forecast. L'objet forecast contient toutes les données de previsions.
+
+-------------------------------------------------------------------------------------
+
+Etape 7
+
+Le projet est disponible sur Github, le lien est en en-tête de ce ce fichier.
+
+Nous avons rencontré des difficultés tout au long de ce TP surtout lors de la configuration de Maven et l'utilisation des dépendances pour la persistence des données. 
+Au final, ce projet nous a permis de découvrir le paradigme des API
+et d'apprendre à les utiliser, ce qui est une compétence indispensable pour notre parcours d'ingénieur. 
+ 
 
 
 
